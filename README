@@ -1,0 +1,16 @@
+Example from: https://pamodaaw.medium.com/handson-introduction-to-grpc-with-java-1195870027fb
+
+1. Add dependencies in pom.xml
+2. Add protobuf-maven-plugin
+3. Define proto file
+	2.1 Basic configuration
+	2.2 Message structure (Vehicle, ParkRequest)
+	2.3 Service and methods (CarParkService, parkVehicle, parkVehicleManyTimes)
+3. Genereting code
+	3.1 Install protocolbuffer https://github.com/protocolbuffers/protobuf/releases/tag/v26.1
+	3.2 mvn clean install
+	3.3 Files will be generated in <SAMPLE_HOME>/target/generated-sources/protobuf/java
+4. Implementation
+	4.1 Implement CarParkServiceImpl 
+	4.2 Implement CarParkServer
+	4.3 Implement CarParkClient
